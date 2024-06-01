@@ -1,13 +1,17 @@
-package com.chong.designs;
+package com.chong.designs.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-public class Company implements InvocationHandler {
+import com.chong.designs.Chongge;
+import com.chong.designs.Job;
+import com.chong.designs.Worker;
+
+public class JdkCompany implements InvocationHandler {
     private Object target;
 
-    public Company(Object target) {
+    public JdkCompany(Object target) {
         this.target = target;
     }
 
@@ -24,7 +28,7 @@ public class Company implements InvocationHandler {
 
     public static Worker createProxy(Chongge chongge) {
         Worker worker = (Worker) Proxy.newProxyInstance(Worker.class.getClassLoader(),
-                new Class[] { Worker.class }, new Company(chongge));
+                new Class[] { Worker.class }, new JdkCompany(chongge));
         return worker;
     }
 }
