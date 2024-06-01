@@ -1,4 +1,4 @@
-package com.chong.designs.cglib;
+package com.chong.designs.proxy.cglib;
 
 import java.lang.reflect.Method;
 

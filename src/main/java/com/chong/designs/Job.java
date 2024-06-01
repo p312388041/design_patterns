@@ -16,4 +16,9 @@ public class Job {
         this.name = name;
         this.price = price;
     }
+ 
+    @Override
+    public String toString() {
+        return "Job [name=" + name + ", price=" + price + "]";
+    }
 }

@@ -1,4 +1,4 @@
-package com.chong.designs.jdk;
+package com.chong.designs.proxy.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

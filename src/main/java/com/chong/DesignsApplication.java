@@ -1,8 +1,7 @@
 package com.chong;
 
-import com.chong.designs.Chongge;
 import com.chong.designs.Job;
-import com.chong.designs.cglib.CglibCompany; 
+import com.chong.designs.single.Person; 
 
 public class DesignsApplication {
 
@@ -11,7 +10,9 @@ public class DesignsApplication {
 		// worker.work(new Job("coding", 10000));
 
 
-		Chongge chongge =(Chongge) CglibCompany.createProxy(new CglibCompany());
-		chongge.work(new Job("coding", 10000));
+		// Chongge chongge =(Chongge) CglibCompany.createProxy(new CglibCompany());
+		// chongge.work(new Job("coding", 10000));
+		Person person = Person.getInstance();
+		System.out.println(person);
 	}
 }
