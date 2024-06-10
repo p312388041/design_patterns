@@ -1,6 +1,5 @@
 package com.chong;
 
-import com.chong.designs.Job;
 import com.chong.designs.single.Person; 
 
 public class DesignsApplication {
